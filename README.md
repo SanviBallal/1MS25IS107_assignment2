@@ -99,23 +99,3 @@ The notebook runs the agent on five questions:
 5. Who invented the World Wide Web? *(general knowledge)*
 
 Questions 4 and 5 test how the agent behaves when the search tool has no relevant information.
-
-## Limitations
-
-- Search is simple keyword matching, not semantic or embedding-based, so it can return loosely related passages.
-- The document set is small and hard-coded.
-- The agent depends on Gemini API availability and free-tier rate limits.
-
-## Possible Improvements
-
-- Replace keyword search with embeddings and vector search.
-- Load documents from files (PDF, TXT) instead of a dictionary.
-- Add more tools, such as a calculator or web search.
-- Show the model's reasoning steps more explicitly.
-
-## References
-
-- [Gemini API: Text generation](https://ai.google.dev/gemini-api/docs/text-generation)
-- [Gemini API: Thinking and signatures](https://ai.google.dev/gemini-api/docs/thinking#signatures)
-- [Agent loop demo notebook](https://github.com/xiaosuhu/midas-ai-in-research/blob/v1.0-dev/docs/notebooks/agent_loop_demo.ipynb)
-
